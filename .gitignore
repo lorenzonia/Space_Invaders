@@ -1,10 +1,14 @@
+# ====================================================================
 # Pasta de compilação (Arquivos binários e objetos locais)
+# ====================================================================
 Debug/
 Release/
 bin/
 obj/
 
-# Arquivos de metadados gerados pelo compilador GCC
+# ====================================================================
+# Arquivos de metadados gerados pelo compilador GCC / Eclipse
+# ====================================================================
 *.o
 *.d
 *.su
@@ -12,10 +16,27 @@ obj/
 *.bin
 *.hex
 *.map
+*.local
 
-# Arquivos temporários e logs do sistema operacional
+# ====================================================================
+# Arquivos do Draw.io e Diagramas
+# ====================================================================
+# Ignora arquivos de projeto editáveis do Draw.io (locais ou temporários)
+*.drawio
+*.drawio.bkp
+*~*.drawio
+
+# Ignora todas as imagens globais (evita sujeira de prints de teste)
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# ABRIR EXCEÇÃO: Não ignorar a imagem oficial do diagrama da arquitetura
+!fluxo_arquitetura.png
+
+# ====================================================================
+# Arquivos temporários e logs do Sistema Operacional
+# ====================================================================
 Thumbs.db
 .DS_Store
-
-# Arquivos de histórico do Eclipse/STM32CubeIDE (Opcional, mas recomendado)
-*.local
