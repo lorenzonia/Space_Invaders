@@ -8,7 +8,7 @@ Este é um jogo estilo **Space Invaders** desenvolvido para o microcontrolador *
 
 O comportamento do sistema é orquestrado por quatro tarefas principais operando concorrentemente sob o escalonador do FreeRTOS. Elas comunicam-se através de semáforos e buffers isolados para garantir alto desempenho de tela sem travar as rotinas críticas da CPU:
 
-![Diagrama de Fluxo da Arquitetura do Sistema](fluxo_arquitetura.png)
+![Diagrama de Fluxo da Arquitetura do Sistema](image/fluxo_arquitetura.png)
 
 > 📘 **Detalhamento Avançado:** Para entender a fundo o funcionamento dos semáforos, a exclusão mútua por Mutex, as prioridades das tarefas e o espelhamento das estruturas de dados (`Game`), acesse o documento técnico completo de [Arquitetura de Software (ARCHITECTURE.md)](ARCHITECTURE.md).
 

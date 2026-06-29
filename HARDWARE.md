@@ -25,7 +25,7 @@ Para garantir o determinismo e a eficiência de hardware, os pinos foram mapeado
 
 O diagrama abaixo ilustra como os sinais elétricos e os barramentos de comunicação interligam a Black Pill aos elementos de interface humana (I/O) e de saída visual/sonora.
 
-![Diagrama de Conexões de Hardware](hardware_diagrama.png)
+![Diagrama de Conexões de Hardware](image/hardware_diagrama.png)
 
 ---
 

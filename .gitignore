@@ -32,9 +32,9 @@ obj/
 *.jpeg
 *.gif
 
-# ABRIR EXCEÇÃO: Não ignorar a imagem oficial do diagrama da arquitetura
-!fluxo_arquitetura.png
-!hardware_diagrama.png
+# ABRIR EXCEÇÃO: Permitir apenas as imagens oficiais dentro da pasta image
+!image/fluxo_arquitetura.png
+!image/hardware_diagrama.png
 
 # ====================================================================
 # Arquivos temporários e logs do Sistema Operacional
