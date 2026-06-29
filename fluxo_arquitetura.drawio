@@ -1,0 +1,84 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Página-1" id="eW5QS4Al6Z2M3myLd9Di">
+    <mxGraphModel dx="1042" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tyulekeKiADq3s5gnUan-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Joystick Analogico ADC via DMA" vertex="1">
+          <mxGeometry height="78" width="260" x="270" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="vTask_Input Leitura Joystick" vertex="1">
+          <mxGeometry height="78" width="260" x="270" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Struct Game Estado Global" vertex="1">
+          <mxGeometry height="54" width="252" x="20" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="vTask_Game Fisica do Jogo" vertex="1">
+          <mxGeometry height="54" width="253" x="274" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="game_render_copy Buffer Espelho" vertex="1">
+          <mxGeometry height="78" width="260" x="234" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="vTask_Render Atualizacao LCD" vertex="1">
+          <mxGeometry height="78" width="260" x="494" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Display ST7735 SPI Hardware" vertex="1">
+          <mxGeometry height="78" width="260" x="544" y="532" as="geometry" />
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-8" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-9" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-10" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.07;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="146" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-11" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.42;exitY=1;entryX=0.48;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-5" value="Copia Segura">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="354" y="367" />
+              <mxPoint x="354" y="507" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-12" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.14;exitY=1;entryX=0.75;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="469" y="507" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-13" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.62;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="674" y="507" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-14" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-4" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.67;exitY=1;entryX=0.27;entryY=0;rounded=0;" target="tyulekeKiADq3s5gnUan-6" value="Sinaliza Sincronismo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="506" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyulekeKiADq3s5gnUan-15" edge="1" parent="1" source="tyulekeKiADq3s5gnUan-6" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.67;exitY=0;entryX=1;entryY=0.98;rounded=0;" target="tyulekeKiADq3s5gnUan-4" value="Libera Proximo Frame">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

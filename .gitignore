@@ -1,0 +1,21 @@
+# Pasta de compilação (Arquivos binários e objetos locais)
+Debug/
+Release/
+bin/
+obj/
+
+# Arquivos de metadados gerados pelo compilador GCC
+*.o
+*.d
+*.su
+*.elf
+*.bin
+*.hex
+*.map
+
+# Arquivos temporários e logs do sistema operacional
+Thumbs.db
+.DS_Store
+
+# Arquivos de histórico do Eclipse/STM32CubeIDE (Opcional, mas recomendado)
+*.local
