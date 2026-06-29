@@ -21,10 +21,14 @@ obj/
 # ====================================================================
 # Arquivos do Draw.io e Diagramas
 # ====================================================================
-# Ignora arquivos de projeto editáveis do Draw.io (locais ou temporários)
+# Ignora arquivos de projeto editáveis do Draw.io e backups padrão
 *.drawio
 *.drawio.bkp
 *~*.drawio
+
+# Ignora arquivos temporários e ocultos de edição do Draw.io (ex: .$fluxo.drawio.bkp)
+.*.drawio.bkp
+.*.drawio.crswap
 
 # Ignora todas as imagens globais (evita sujeira de prints de teste)
 *.png
@@ -33,8 +37,8 @@ obj/
 *.gif
 
 # ABRIR EXCEÇÃO: Permitir apenas as imagens oficiais dentro da pasta image
-!image/fluxo_arquitetura.png
-!image/hardware_diagrama.png
+!Image/fluxo_arquitetura.png
+!Image/hardware_diagrama.png
 
 # ====================================================================
 # Arquivos temporários e logs do Sistema Operacional
