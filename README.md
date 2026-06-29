@@ -21,6 +21,8 @@ O comportamento do sistema é orquestrado por quatro tarefas principais operando
 * **Controle:** Joystick Analógico de 2 eixos (Eixo X amostrado por ADC1 com transferência automatizada via DMA) + Botão de Disparo (`PC15`) com resistor de *pull-up* ativo.
 * **Áudio:** Transdutor acústico piezoelétrico (Buzzer) operando via acionamento digital direto em GPIO (`PB0`).
 
+> 🔌 **Esquema de Ligação:** Para consultar o mapeamento exato de cada pino na Black Pill, detalhes sobre o circuito e o diagrama de blocos elétrico, acesse o documento de [Mapeamento de Hardware (HARDWARE.md)](HARDWARE.md).
+
 ---
 
 ## ⚙️ Como Compilar e Executar
